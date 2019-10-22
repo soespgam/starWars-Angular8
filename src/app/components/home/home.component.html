@@ -1,0 +1,71 @@
+<div id="vacio">
+</div>
+<div class="jumbotron jumbotron-fluid animated fadeIn fast cajagrande">
+
+  <div class="container col-12 column">
+    <div class="imagenhome">
+      <img class="imagen1" src="assets/img/star.png" alt="">
+    </div>
+    <div class="parrafohome">
+      <h1 class="display-4">Star Wars App</h1>
+      <p>Star Wars ​​​ es una franquicia compuesta primordialmente de una serie de películas concebidas por el cineasta
+        estadounidense George Lucas, y producidas y distribuidas por The Walt Disney Company a partir de 2012.</p>
+    </div>
+  </div>
+  <footer class="piehome">
+    <p class="lead"> &copy; Esta es una aplicacion sobre Star Wars usando como fuente de datos a swapi.co</p>
+  </footer>
+
+  <div class="jumbotron jumbotron-fluid animated fadeIn fast row container-cards">
+    
+    <div class="card-group">
+      <div class="card">
+        <img src="../../../assets/img/personajes/personajes.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PERSONAJES</h5>
+          <p class="card-text">La Saga de películas Star Wars ha dado lugar a grandes personajes, tanto protagonistas como antagonistas,
+            y también algunos divertidos.</p>
+            <button type="button" class="btn btn-warning" [routerLink]="['/Personaje']" >ver mas</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../../../assets/img/personajes/pelliculas.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PELICULAS</h5>
+          <p class="card-text">Star Wars (conocida también en español como La guerra de las galaxias)​​​ es una saga que
+            se divide en 15 películas de un aproximado de dos horas ....</p>
+          <button type="button" class="btn btn-warning" [routerLink]="['/Peliculas']" >ver mas</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../../../assets/img/personajes/Historia.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">HISTORIA</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+            content. This card has even longer content than the first to show that equal height action.</p>
+            <button type="button" class="btn btn-warning" [routerLink]="['/about']" >ver mas</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  window.sr = ScrollReveal();
+  sr.ScrollReveal('.container-cards', {
+    duration: 30000,
+    origin: 'top',
+    distance: '400px'
+  });
+
+  sr.ScrollReveal('.imagenhome', {
+    duration: 30000,
+    origin: 'top',
+    distance: '400px'
+  });
+
+
+</script>

@@ -1,0 +1,14 @@
+<div class="card" style="width: 18rem;">
+    <img src="assets/img/personajes/leila.png" class="card-img-top">
+    <div class="card-body">
+        <h5 class="card-title">{{personaje.name}}</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">ALTURA: {{personaje.height}}</li>
+        <li class="list-group-item">PESO: {{personaje.mass}}</li>
+        <li class="list-group-item">COLOR CABELLO: {{personaje.hair_color}}</li>
+    </ul>
+    <div class="card-body">
+        <a [routerLink]="['/Personajes']" class="btn btn-warning btn-block">Regresar</a>
+    </div>
+</div>

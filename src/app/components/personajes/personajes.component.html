@@ -1,0 +1,21 @@
+<h1>Personajes de Star Wars</h1>
+<hr>
+<div class="card-columns">
+    <div class="card animatd fadeIn fast" *ngFor="let personaje of personajes ; let i = index">
+        <img class="card-img-top img-fluid " src="assets/img/personajes/leila.png" class="card-img-top"
+            [alt]="personaje.name">
+        <div class="card-body">
+            <h5 class="card-title">{{ personaje.name }}</h5>
+            <ul class="list-group">
+                <li class="list-group-item">height:{{personaje.height}}</li>
+                <li class="list-group-item">mass:{{personaje.mass}}</li>
+                <li class="list-group-item">hair color:{{personaje.hair_color}}</li>
+                <li class="list-group-item">skin color:{{personaje.skin_color}}</li>
+                <li class="list-group-item">eye color:{{personaje.eye_color}}</li>
+                <li class="list-group-item">birth year:{{personaje.birth_year}}</li>
+                <li class="list-group-item">gender:{{personaje.gender}}</li>
+            </ul>
+            <button (click)="verPersonaje(i)" type="button" class="btn btn-outline-primary btn-block">ver mas</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<h1>Peliculas</h1>
+<hr>
+<div class="card-columns">
+    <div class="card animatd fadeIn fast" *ngFor="let pelicula of peliculas ; let i = index">
+        <img class="card-img-top img-fluid " src="assets/img/peliculas/star.png" class="card-img-top" [alt]="pelicula.title">
+        <div class="card-body">
+            <h5 class="card-title">{{ pelicula.title }}</h5>
+            <p class="card-text">{{ pelicula.opening_crawl }}</p>
+            <p class="card-text"><small class="text-muted">{{ pelicula.created }}</small></p>
+        
+            <button (click)="verPelicula(i)" type="button" class="btn btn-outline-primary btn-block" >ver mas</button>
+               
+        </div>
+    </div>
+</div>
