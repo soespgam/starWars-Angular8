@@ -1,21 +1,22 @@
-<h1>Personajes de Star Wars</h1>
+<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Russo+One&display=swap" rel="stylesheet">
+
+<h1 class="titulo">PERSONAJES DE STAR WARS</h1>
 <hr>
-<div class="card-columns">
-    <div class="card animatd fadeIn fast" *ngFor="let personaje of personajes ; let i = index">
-        <img class="card-img-top img-fluid " src="assets/img/personajes/leila.png" class="card-img-top"
+<div class="card-columns ">
+    <div class="card animatd fadeIn fast bodycard" *ngFor="let personaje of personajes ; let i = index">
+        <img class="img.pequeña" src="assets/img/personajes/leila.png" class="card-img-top"
             [alt]="personaje.name">
         <div class="card-body">
             <h5 class="card-title">{{ personaje.name }}</h5>
-            <ul class="list-group">
-                <li class="list-group-item">height:{{personaje.height}}</li>
-                <li class="list-group-item">mass:{{personaje.mass}}</li>
-                <li class="list-group-item">hair color:{{personaje.hair_color}}</li>
-                <li class="list-group-item">skin color:{{personaje.skin_color}}</li>
-                <li class="list-group-item">eye color:{{personaje.eye_color}}</li>
-                <li class="list-group-item">birth year:{{personaje.birth_year}}</li>
-                <li class="list-group-item">gender:{{personaje.gender}}</li>
-            </ul>
-            <button (click)="verPersonaje(i)" type="button" class="btn btn-outline-primary btn-block">ver mas</button>
+            <h6>height:{{personaje.height}}</h6>
+            <h6>mass:{{personaje.mass}}</h6>
+            <h6>hair color:{{personaje.hair_color}}</h6>
+            <h6>skin color:{{personaje.skin_color}}</h6>
+            <h6>eye color:{{personaje.eye_color}}</h6>
+            <h6>birth year:{{personaje.birth_year}}</h6>
+            <h6>gender:{{personaje.gender}}</h6>
+
+            <button (click)="verPersonaje(i)" type="button" class="btn btn-outline-warning btn-block ">ver mas</button>
         </div>
     </div>
 </div>

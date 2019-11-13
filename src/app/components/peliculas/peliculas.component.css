@@ -1,0 +1,44 @@
+.titulo{
+    font-family: 'Russo One', sans-serif;
+    color: white;
+}
+
+img.pequeña{
+    width: 50px; height: 50px;
+    }
+
+
+.carta {
+    width: 330px;
+    height: 530px;
+    border-radius: 8px;
+    border-color: yellow;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0,2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0,25s;
+    padding: 2px;
+    
+}
+
+
+
+p{
+    text-align: justify;
+    font-size: x-small ;
+}
+
+
+.card:hover
+{
+box-shadow:
+1px 1px #070707,
+2px 2px #fbfdfd,
+3px 3px #ecd60a;
+-webkit-transform: translateX(-10px);
+transform: translateX(-10px);
+}
+
+
+
