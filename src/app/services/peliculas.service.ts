@@ -11,7 +11,7 @@ export class PeliculasService {
 
     getPeliculas() {
         return new Promise((res, error) => {
-            this.http.get('https://swapi.co/api/films/?format=json').subscribe(
+            this.http.get('https://swapi.dev/api/films/?format=json').subscribe(
                 response => {
                     res(response)
                 },
@@ -26,7 +26,7 @@ export class PeliculasService {
         let index = Number.parseInt(id);
         index = index + 1
         return new Promise((resolve, reject) => {
-            this.http.get('https://swapi.co/api/films/' + index + '/').subscribe(
+            this.http.get('https://swapi.dev/api/films/' + index + '/').subscribe(
                 result => {
                     resolve(result);
                 },

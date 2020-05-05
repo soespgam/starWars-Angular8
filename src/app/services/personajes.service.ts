@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { resolve } from 'q';
+
 
 
 @Injectable()
@@ -11,7 +11,7 @@ export class PersonajesService {
 
     getPersonajes() {
         return new Promise((resolve, reject) => {
-            this.http.get('https://swapi.co/api/people/?format=json').subscribe(
+            this.http.get('https://swapi.dev/api/people/?format=json').subscribe(
                 result => {
                     resolve(result);
                 },
@@ -25,7 +25,7 @@ export class PersonajesService {
         let index = Number.parseInt(id);
         index = index + 1;
         return new Promise((resolve, reject) => {
-            this.http.get('https://swapi.co/api/people/' + index + '/').subscribe(
+            this.http.get('https://swapi.dev/api/people/' + index + '/').subscribe(
                 result => {
                     resolve(result);
                 },
